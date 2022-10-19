@@ -12,7 +12,7 @@
 
     * `Bucket name` e.g. `myBucket`    // this will create the bucket with this name, and this name should be unique. You have to provide any name which is not already present in the bucket.
     * `AWS Region` e.g. `AWS Region`   // remember the region you have selected, because in same region you have to create lambda function.
-    * `Object Ownership` , Click on `ACLs enabled` , check `I acknowledge that ACLs will be restored`
+    * `Object Ownership` , select `ACLs enabled` 
     * `Block all public access`    // uncheck this field and further uncheck 
     * Inside `Block all public access`, check `I acknowledge that the current settings might result in this bucket and the objects within becoming public.`
     * Finally, click on `Create bucket`.
