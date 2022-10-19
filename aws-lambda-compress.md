@@ -95,24 +95,25 @@
 1. click on `Create function` button.
 
     * `Choose one of the following options to create your function.`, select `Author from scratch` which is also selected by-default.
-    * Check region on the navbar , this should be same as region you selected for bucket. If it is not same, then click on dropdown and select the particular region.
+    * Check region on the navbar(on top right corner besides question mark) e.g. `Mumbai` , this should be same as region you selected for bucket. If it is not same, then click on dropdown and select the particular region.
     * `Function name` e.g. `my-lambda-function`   // provide any name related to the task you want to do.
     * `Runtime`  e.g. `Python 3.7`  //  select Python 3.7, from the dropdown.
     * `Architecture` e.g. `x86_64`
     * `Change default execution role`
         * expand `Change default execution role` , click on `Use an existing role`.
         * `Existing role` , select a role which you created earlier in `How to create permissions to execute lambda function with restricting objects for CRUD operations`, basically role is certain permissions you attach with the lambda function, such as restricting any folder to GET or PUT or DELETE objects from certain buckets.
-    * Inside `Code source` section, click on `Upload from` dropdown and select `.zip file`. Upload zip file, which consists compress image function in python.
-    *  Below `Code source` section, go to `Runtime settings`, click on `Edit` button.
+    * Click on `Create function`.
+    * Slide down and at right side of `Code source` section, click on `Upload from` dropdown and select `.zip file`. Upload zip file, which consists compress image function in python.
+    *  Below `Code source` and `Code properties` section, go to `Runtime settings`, click on `Edit` button.
     * Inside `Change Handler` section, replace `lambda_function.lambda_handler` with `CreateThumbnail.lambda_handler`.
-    * Now, click on `Configuration` tab.
+    * Now, click on `Configuration` tab present above `Code source` section.
     * Now, inside `Configuration`, Edit `General configuration` by clicking on `edit` button.
     * Go to `Timeout` and set `2 min 0 sec` as its value and click on `Save` button.
     * Below `General configuration` tab on left hand side, click on `Triggers`.
     * Then click on `Add trigger`
         * Inside `Trigger configuration`, select `s3` 
         * In `Bucket` section, select bucket from which you want to trigger this function.
-        * In `Prefix - optional`, write `hocal/`
+        * In `Prefix - optional`, write `h-upload/`
         * check `I acknowledge that using ...` 
         * Click on `Add` button
 
