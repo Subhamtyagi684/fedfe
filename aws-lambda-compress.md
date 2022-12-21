@@ -26,7 +26,7 @@
 
 1. Click on `Services` from navbar again.
 
-1. In `All services` find `Security, Identity, & Compliance` on left hand side. Click on Compute and then on right hand side, click on `IAM`.
+1. In `All services` find `Security, Identity, & Compliance` on left hand side and then on right hand side, click on `IAM`.
 
 1. On left side-menu , inside `Access management`,  click on `Roles`.
 
