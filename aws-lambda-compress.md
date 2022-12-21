@@ -35,7 +35,7 @@
     * `Trusted entity type` should be AWS service
     * `Use case` should be `Lambda` 
     * Click on `next` button.
-    * If your permission policy isn't created already, you have to create your own `Permissions policies` to attach with the role. if it is already created, skip further steps and go to `How to create a lambda function` section.
+    * If your permission policy isn't created already, you have to create your own `Permissions policies` to attach with the role. if it is already created, skip this step else go to `How to create a lambda function` section before going to next step.
     * Click on `Create Policy` button.
     * Select `JSON` instead of `Visual editor` // this simply means we will upload below custom json file . Just replace `<bucket-name>` with `bucket you created above`.
         * e.g. If my bucket name is filmchi-site, it would look like:
